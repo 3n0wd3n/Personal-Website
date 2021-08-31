@@ -114,5 +114,7 @@ function addPosts(e){
     informationText.classList.remove('post-is-added-visible');
     informationText.classList.add('post-is-added');
   }
+
+  console.log("a")
  
 }
