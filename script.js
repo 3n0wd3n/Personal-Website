@@ -114,25 +114,5 @@ function addPosts(e){
     informationText.classList.remove('post-is-added-visible');
     informationText.classList.add('post-is-added');
   }
-  // calling ajax 
-  $.ajax({
-    type: "POST",
-    dataType: "JSON",
-    // contentType: false,
-    // processData: false,
-    // cache: false,
-    url: "php/insert.php",
-    data: {
-      // variable for php: variable from vanilla js
-        date: postText[0],
-        text: postText[1],
-        place: postText[2]
-    },
-    error: function(response){
-      console.log(response);
-    },
-    success: function (response) {
-      console.log(response);
-    }
-});
+ 
 }
