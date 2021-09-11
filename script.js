@@ -68,13 +68,15 @@ function openModal(){
 function addPosts(e){
   e.preventDefault();
   var parentOfInputFields = document.querySelector('.form-post');
-  // console.log(parentOfInputFields);
+//   console.log(parentOfInputFields[0].value, "test");
   var postText = []
   for (var i = 0; i < parentOfInputFields.length; i++){
-    // console.log(parentOfInputFields[i].value)
+  //console.log(parentOfInputFields[i].value, parentOfInputFields[i])
     var value = parentOfInputFields[i].value;
     postText.push(value);
   }
+//   console.log(typeof postText[0])
+ if (postText[0] != "" & postText[1] != "" & postText[2] != ""){
   var articleTag = document.createElement('ARTICLE');
   articleTag.classList.add('post');
   var headingInArticle = document.createElement('H2');
@@ -111,10 +113,4 @@ function addPosts(e){
   informationText.classList.add('post-is-added-visible');
   setTimeout(hideElement, 2000) //milliseconds until timeout//
   function hideElement() {
-    informationText.classList.remove('post-is-added-visible');
-    informationText.classList.add('post-is-added');
-  }
-
-  console.log("a")
- 
-}
+    in

@@ -427,7 +427,7 @@ input {
 }
 
 .post-section{
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
     background-color: white;
     display: flex;
@@ -499,6 +499,7 @@ input {
     /* border: 2.5px solid rgba(0, 0, 0, 0.589); */
     border-radius: 30px;
     box-shadow: 10px 10px 35px rgb(216, 216, 216);
+    margin-bottom: 1.5rem;
 }
 
 .to-top-button:hover{
