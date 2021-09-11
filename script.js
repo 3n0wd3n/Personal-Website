@@ -113,4 +113,33 @@ function addPosts(e){
   informationText.classList.add('post-is-added-visible');
   setTimeout(hideElement, 2000) //milliseconds until timeout//
   function hideElement() {
-    in
+    informationText.classList.remove('post-is-added-visible');
+    informationText.classList.add('post-is-added');
+  }
+  console.log("Sending works!")
+ }
+ else{
+  var arrayForBadInputs = []
+  console.log(postText.length);
+  for (var i = 0; i <  postText.length - 1; i++){
+//    console.log(postText[i])
+   if (postText[i] == ""){
+    arrayForBadInputs.push(i);
+   }
+  }
+  console.log(arrayForBadInputs);
+  console.log("nevyplnil jsi všechna pole!")
+  var somethingMissing = document.createElement('p');
+  somethingMissing.textContent = 'Nejsou vyplněna všechna pole !';
+  var formPost = document.querySelector('.form-post');
+//   console.log(formPost[0], formPost);
+  formPost.appendChild(somethingMissing);
+  setTimeout(showError, 3500)
+  function showError() {
+   formPost.removeChild(somethingMissing);
+  }
+ }
+ parentOfInputFields[0].value = "";
+ parentOfInputFields[1].value = "";
+ parentOfInputFields[2].value = "";
+}
