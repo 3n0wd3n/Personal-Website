@@ -142,4 +142,6 @@ function addPosts(e){
  parentOfInputFields[0].value = "";
  parentOfInputFields[1].value = "";
  parentOfInputFields[2].value = "";
+ console.log("a");
+ 
 }
