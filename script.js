@@ -149,7 +149,7 @@ function addPosts(e){
   //  musím vyřešit to aby se rozsvítili současně
   // console.log(arrayForBadInputs[i])
   // parentOfInputFields
-  badInput = arrayForBadInput[i];
+  badInput = arrayForBadInputs[i];
   console.log(parentOfInputFields[badInput]);
  }
 
