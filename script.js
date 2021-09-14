@@ -152,14 +152,14 @@ function addPosts(e){
   badInputIndex = arrayForBadInputs[i];
   console.log(parentOfInputFields[badInputIndex]);
   badInput = parentOfInputFields[badInputIndex];
-  console.log(badInput);
+  // console.log(badInput);
   setTimeout(showForBadInput, 3500)
   function showForBadInput() {
     badInput.style.borderColor = "red";
   }
   setTimeout(hideForBadInput, 3500)
   function hideForBadInput() {
-    badInput.style.borderColor = "none";
+    badInput.style.border = "none";
   }
  }
 }
