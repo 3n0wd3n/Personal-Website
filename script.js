@@ -130,7 +130,7 @@ function addPosts(e){
   console.log(arrayForBadInputs);
   console.log("nevyplnil jsi všechna pole!")
   var somethingMissing = document.createElement('p');
-  somethingMissing.textContent = 'Nejsou vyplněna všechna pole !';
+  // somethingMissing.textContent = 'Nejsou vyplněna všechna pole !';
   var formPost = document.querySelector('.form-post');
 //   console.log(formPost[0], formPost);
   formPost.appendChild(somethingMissing);
@@ -153,13 +153,16 @@ function addPosts(e){
   console.log(parentOfInputFields[badInputIndex]);
   badInput = parentOfInputFields[badInputIndex];
   // console.log(badInput);
-  setTimeout(showForBadInput, 3500)
-  function showForBadInput() {
-    badInput.style.borderColor = "red";
-  }
-  setTimeout(hideForBadInput, 3500)
-  function hideForBadInput() {
-    badInput.style.border = "none";
-  }
+  badInput.style.border = "2px solid";
+  badInput.style.borderColor = "#eca1a6";
  }
+ setTimeout(hide, 1500)
+  function hide() {
+    for (i = 0; i < arrayForBadInputs.length; i++){
+      badInputIndex2 = arrayForBadInputs[i];
+      // console.log(parentOfInputFields[badInputIndex]);
+      badInput2 = parentOfInputFields[badInputIndex2];
+      badInput2.style.border = "none";
+    }
+  }
 }
