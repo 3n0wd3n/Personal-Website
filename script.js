@@ -149,9 +149,12 @@ function addPosts(e){
   //  musím vyřešit to aby se rozsvítili současně
   // console.log(arrayForBadInputs[i])
   // parentOfInputFields
-  badInput = arrayForBadInputs[i];
-  console.log(parentOfInputFields[badInput]);
+  badInputIndex = arrayForBadInputs[i];
+  console.log(parentOfInputFields[badInputIndex]);
+  badInput = parentOfInputFields[badInputIndex];
+  setTimeout(showErrorForBadInput, 3500)
+  function showErrorForBadInput() {
+    badInput.style.borderColor = "red";
+  }
  }
-
-
 }
