@@ -1,0 +1,9 @@
+$ git init https://github.com/3n0wd3n/Personal-Website/tree/main
+$ git remote
+$ git remote add origin https://github.com/3n0wd3n/Personal-Website.git
+$ git branch --list
+$ git branch main
+$ git checkout main
+$ git add name_of_document.doc (or u can also write -A )
+$ git commit name_of_document.doc (or u can also write -A )
+$ git push -f https://github.com/3n0wd3n/Personal-Website master | $ git push -f origin main
