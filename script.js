@@ -142,17 +142,13 @@ function addPosts(e){
  parentOfInputFields[0].value = "";
  parentOfInputFields[1].value = "";
  parentOfInputFields[2].value = "";
- counter = 0
+ console.log(arrayForBadInputs.length);
  for (var i = 0; i < arrayForBadInputs.length; i++) {
   //  takže jsem si vytvořil cyklus kde budu chtít aby se obarvovali jen rámečky polí které nejsou vyplněné
   //  už mám hotové vyselektování těch polí které uživatel nevyplnil pod seznam arrayForBadInputs a budu obarvovat děti od parentOfInptFields rodiče
   //  musím vyřešit to aby se rozsvítili současně
   // console.log(arrayForBadInputs[i])
   // parentOfInputFields
-  if (counter == 2){
-    console.log(counter);
-  }
-  counter += 1;
  }
 
 
