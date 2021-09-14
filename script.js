@@ -152,7 +152,7 @@ function addPosts(e){
   if (counter == 2){
     console.log(counter);
   }
-  counter += 1;
+  counter += 2;
  }
 
 
