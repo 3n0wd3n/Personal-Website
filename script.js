@@ -130,7 +130,7 @@ function addPosts(e){
   console.log(arrayForBadInputs);
   console.log("nevyplnil jsi všechna pole!")
   var somethingMissing = document.createElement('p');
-  somethingMissing.textContent = 'Nejsou vyplněna všechna pole !';
+  // somethingMissing.textContent = 'Nejsou vyplněna všechna pole !';
   var formPost = document.querySelector('.form-post');
 //   console.log(formPost[0], formPost);
   formPost.appendChild(somethingMissing);
@@ -142,13 +142,27 @@ function addPosts(e){
  parentOfInputFields[0].value = "";
  parentOfInputFields[1].value = "";
  parentOfInputFields[2].value = "";
+ console.log("Count of bad inputs", arrayForBadInputs.length);
  for (var i = 0; i < arrayForBadInputs.length; i++) {
   //  takže jsem si vytvořil cyklus kde budu chtít aby se obarvovali jen rámečky polí které nejsou vyplněné
   //  už mám hotové vyselektování těch polí které uživatel nevyplnil pod seznam arrayForBadInputs a budu obarvovat děti od parentOfInptFields rodiče
   //  musím vyřešit to aby se rozsvítili současně
   // console.log(arrayForBadInputs[i])
   // parentOfInputFields
+  badInputIndex = arrayForBadInputs[i];
+  console.log(parentOfInputFields[badInputIndex]);
+  badInput = parentOfInputFields[badInputIndex];
+  // console.log(badInput);
+  badInput.style.border = "2px solid";
+  badInput.style.borderColor = "#eca1a6";
  }
-
-
+ setTimeout(hide, 1500)
+  function hide() {
+    for (i = 0; i < arrayForBadInputs.length; i++){
+      badInputIndex2 = arrayForBadInputs[i];
+      // console.log(parentOfInputFields[badInputIndex]);
+      badInput2 = parentOfInputFields[badInputIndex2];
+      badInput2.style.border = "none";
+    }
+  }
 }
