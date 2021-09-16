@@ -1,5 +1,6 @@
 $ git init https://github.com/3n0wd3n/Personal-Website/tree/main
-$ git pull https://github.com/3n0wd3n/Personal-Website.git --allow-unrelated-histories
+{% comment %} Umožní stáhnout aktualizovat stažením věci z githubu {% endcomment %}
+$ git pull https://github.com/3n0wd3n/Personal-Website.git --allow-unrelated-histories 
 $ git remote
 $ git remote add origin https://github.com/3n0wd3n/Personal-Website.git
 $ git branch --list
