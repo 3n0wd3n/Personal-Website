@@ -4,4 +4,6 @@ I always wanted to store my thoughts somewhere, but meanwhile, when I started to
 
 So let the story begin. :)
 
+https://cryptexted.netlify.app/
+
 ![qrcode_cryptexted netlify app](https://user-images.githubusercontent.com/47132583/170284640-44551e40-e47e-4d08-8414-2899181308b4.png)
